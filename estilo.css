@@ -1,0 +1,252 @@
+html, body{
+    margin: 0;
+    height: 100%;
+    padding: 0%;
+    font-family: 'Roboto', sans-serif;
+}
+h3, 
+h4,
+ul{
+    text-transform: uppercase;  
+}
+p, 
+h3, 
+h4{
+    line-height: 1.5;
+}
+div{
+    display: block;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+h3 {
+    text-align: center;
+    font-size: 25px;
+    padding: 4%;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 15px;
+}
+section{
+    padding: 25px 0 25px 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+
+/* cabeçalho */
+header{
+    background-color: black;
+    color: black;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+#logo{
+    width: 80px;
+    position: absolute;
+    margin-left: 8%;
+}
+#menu{
+    float: right;
+    margin-right: 5%;
+    list-style: none;
+    top: 0px;
+}
+#divmenu{
+    transform: translateY(-20px);
+}
+
+li{
+    float: left;
+    padding: 25 10 21 10;
+}
+
+li:hover{
+    background-color: rgb(235, 196, 69);
+}
+
+/* imagem de fundo */
+
+#imagem_de_fundo{
+    background: url(img/imagem_de_fundo.png);
+    width: 60%;
+    padding: 20%;
+    background-size:cover;
+    text-align: center;
+    font-size: 70%;
+    color: orangered;
+}
+#titulo{
+    color: rgb(252, 122, 0);
+    padding-top: 20%;
+    font-size: 70px;
+    margin: 0;
+    padding: 0;
+    text-shadow: 2px 2PX 2px black;
+
+}
+
+#subtitulo {
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    margin: 15 40 45 40;
+}
+#acao{
+    color: white;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: black;
+    padding: 10px 20px 10px 20px;
+    font-family: Helvetica, sans-serif;
+}
+#acao:hover{
+    background-color: rgb(235, 196, 69) ;
+}
+
+/* ícones, destaque e ajuste das imagens */
+.icone{
+    width: 45%;
+}
+.coluna:hover>.icone{
+    background:rgb(235, 196, 69);
+    border-radius: 50px;
+}
+.destaque {
+    background-color: rgb(235, 196, 69);
+}
+.imgteca{
+    width: 80%;
+    height: 50%;
+    padding-top: 20%;
+}
+
+.descer{
+    padding-top: 25%;
+}
+#afastar{
+    margin: 15 50 15 50;
+}
+
+
+/* divisões das colunas */
+.coluna{
+    float: left;
+    padding: 0 5%;
+    position: relative;
+}
+.dois{
+    width: 40%;
+}
+.tres{
+    width: 29%;
+    padding: 0 2%;
+}
+.quatro{
+    width: 15%;
+}
+
+/*alinhamento de texto */
+.justificado{
+    text-align: justify;
+}
+.centralizado{
+    text-align: center;
+}
+
+/* rodapé */
+footer{
+    background-color:black;
+    float: left;
+    width: 100%;
+}
+.rodape{
+    text-decoration: none;
+    color: white;
+}
+
+/* Responsividade */
+@media all and (max-width:768px) {
+    #menu {
+        visibility: hidden;
+    }
+
+    .coluna,
+    .dois,
+    .tres,
+    .quatro {
+        display: block;
+        width: 80%;
+        padding: 0;
+        margin: 10px auto;
+        float: none;
+    }
+
+    #divlogo{
+        width: 100%;
+        position: relative;
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    #imagem_de_fundo{
+        width: 60%;
+    }
+    
+    #açao{
+        background-color: hidden;
+        padding: 0.5%;
+        padding: 2 7 7 7;
+    }
+
+    .icone{
+        width: 20%;
+        padding: 10px 0 0 0;
+    }
+
+    .imgteca{
+        width: 55%;
+        height: 50%;
+        padding: 40px 0 0 0;
+    }
+
+    #divlogo{
+        width: 100%;
+        position: relative;
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    header #logo{
+        margin-left: 0px;
+        position: relative;
+        text-align: center;
+    }
+ 
+    #titulo{
+        margin-top: 10%;
+        margin: 5% 10% 0 25%;
+        font-size: 35px;
+        padding-top: 50;
+        margin: -25;
+    }
+   
+    #subtitulo{
+        margin: 10% 10% 10% 10%;
+        line-height: 1.2;
+    }
+
+}
